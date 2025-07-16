@@ -118,3 +118,33 @@ For more details and advanced configuration, see [`backend/README.md`](../../bac
   - `DELETE /tasks/:id/` — Delete task
 
 ---
+
+## Screenshots
+
+Below are screenshots demonstrating various features and views of Tasknest:
+
+### Authentication
+
+**Login Page:**
+![Login Page](frontend/tasknest/src/assets/login.png)
+
+**Register Page:**
+![Register Page](frontend/tasknest/src/assets/register.png)
+
+### Task Management
+
+**Task List (Empty State):**
+![Task List Empty](frontend/tasknest/src/assets/tasks-empty.png)
+
+**Task List (Completed Task):**
+![Task List Completed](frontend/tasknest/src/assets/tasks-completed.png)
+
+### Backend & Database
+
+**Docker Compose Running Backend:**
+![Docker Backend](frontend/tasknest/src/assets/docker-backend.png)
+
+**pgAdmin Viewing Tasks Table:**
+![pgAdmin Tasks Table](frontend/tasknest/src/assets/pgadmin-tasks.png)
+
+---
