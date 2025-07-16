@@ -121,30 +121,22 @@ For more details and advanced configuration, see [`backend/README.md`](../../bac
 
 ## Screenshots
 
-Below are screenshots demonstrating various features and views of Tasknest:
+### Login Page
+![Login Page](ui/login.png)
 
-### Authentication
+### Register Page
+![Register Page](ui/register.png)
 
-**Login Page:**
-![Login Page](frontend/tasknest/src/assets/login.png)
+### Task List
+![Task List](ui/tasks.png)
 
-**Register Page:**
-![Register Page](frontend/tasknest/src/assets/register.png)
+### Add Task Modal
+![Add Task Modal](ui/addtask.png)
 
-### Task Management
+### Docker Setup
+![Docker Setup](ui/docker.png)
 
-**Task List (Empty State):**
-![Task List Empty](frontend/tasknest/src/assets/tasks-empty.png)
-
-**Task List (Completed Task):**
-![Task List Completed](frontend/tasknest/src/assets/tasks-completed.png)
-
-### Backend & Database
-
-**Docker Compose Running Backend:**
-![Docker Backend](frontend/tasknest/src/assets/docker-backend.png)
-
-**pgAdmin Viewing Tasks Table:**
-![pgAdmin Tasks Table](frontend/tasknest/src/assets/pgadmin-tasks.png)
+### PostgreSQL Setup
+![PostgreSQL Setup](ui/postgres.png)
 
 ---

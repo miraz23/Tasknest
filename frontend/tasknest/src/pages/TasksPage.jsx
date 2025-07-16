@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { getTasks, createTask, updateTask, deleteTask } from "../api/tasks";
 import TaskList from "../components/Tasks/TaskList";
 import TaskForm from "../components/Tasks/TaskForm";
+import Modal from "../components/Layout/Modal";
 
 const FILTERS = [
   { label: "All", value: "all" },
@@ -75,13 +76,13 @@ export default function TasksPage() {
           </button>
         ))}
       </div>
-      {showForm && (
+      <Modal isOpen={showForm} onClose={() => { setShowForm(false); setEditing(null); }}>
         <TaskForm
           onSubmit={editing ? handleUpdate : handleCreate}
           initialData={editing}
           onCancel={() => { setShowForm(false); setEditing(null); }}
         />
-      )}
+      </Modal>
       {loading ? <div>Loading...</div> : (
         <TaskList
           tasks={tasks}
