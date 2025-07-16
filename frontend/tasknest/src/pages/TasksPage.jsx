@@ -62,13 +62,13 @@ export default function TasksPage() {
     <div className="max-w-2xl mx-auto">
       <div className="flex justify-between items-center mb-4">
         <h2 className="text-2xl font-bold">My Tasks</h2>
-        <button className="btn" onClick={() => { setShowForm(true); setEditing(null); }}>+ New Task</button>
+        <button className="btn cursor-pointer" onClick={() => { setShowForm(true); setEditing(null); }}>+ New Task</button>
       </div>
       <div className="flex gap-2 mb-4">
         {FILTERS.map(f => (
           <button
             key={f.value}
-            className={`btn btn-sm ${filter === f.value ? "bg-blue-600 text-white" : "bg-gray-200 text-gray-700"}`}
+            className={`btn btn-sm px-4 py-2 cursor-pointer ${filter === f.value ? "bg-indigo-600 text-white" : "bg-gray-200 text-gray-700"}`}
             onClick={() => setFilter(f.value)}
           >
             {f.label}

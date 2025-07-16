@@ -11,13 +11,13 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="bg-blue-600 text-white px-4 py-3 flex justify-between items-center">
-      <Link to="/tasks" className="font-bold text-lg">TaskNest</Link>
+    <nav className="bg-indigo-600 text-white px-4 py-3 flex justify-between items-center">
+      <Link to="/tasks" className="font-bold text-lg uppercase">Task Nest</Link>
       <div className="flex gap-4 items-center">
         {isAuth ? (
           <>
             <Link to="/tasks" className="hover:underline">Tasks</Link>
-            <button className="bg-white text-blue-600 px-3 py-1 rounded ml-2" onClick={handleLogout}>Logout</button>
+            <button className="bg-white text-blue-600 px-3 py-1 rounded ml-2 cursor-pointer" onClick={handleLogout}>Logout</button>
           </>
         ) : (
           <>

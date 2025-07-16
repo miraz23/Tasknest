@@ -1,7 +1,7 @@
 export function Button({ children, className = '', ...props }) {
   return (
     <button
-      className={`bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 disabled:opacity-50 ${className}`}
+      className={`bg-indigo-600 text-white px-4 py-2 rounded hover:bg-indigo-700 disabled:opacity-50 cursor-pointer ${className}`}
       {...props}
     >
       {children}
@@ -12,7 +12,7 @@ export function Button({ children, className = '', ...props }) {
 export function DangerButton({ children, className = '', ...props }) {
   return (
     <button
-      className={`bg-red-600 text-white px-4 py-2 rounded hover:bg-red-700 disabled:opacity-50 ${className}`}
+      className={`bg-red-600 text-white px-4 py-2 rounded hover:bg-red-700 disabled:opacity-50 cursor-pointer ${className}`}
       {...props}
     >
       {children}
