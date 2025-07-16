@@ -1,0 +1,30 @@
+services:
+  db:
+    image: postgres:15
+    env_file:
+      - .env
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    ports:
+      - "5433:5432"
+
+  web:
+    build: .
+    env_file:
+      - .env
+    command: python tasknest/manage.py runserver 0.0.0.0:8000
+    volumes:
+      - .:/code
+    ports:
+      - "8000:8000"
+    depends_on:
+      - db
+    environment:
+      - DEBUG=1
+      - DJANGO_DB_HOST=db
+      - DJANGO_DB_NAME=tasknest
+      - DJANGO_DB_USER=tasknestuser
+      - DJANGO_DB_PASSWORD=tasknestpass
+
+volumes:
+  postgres_data:
